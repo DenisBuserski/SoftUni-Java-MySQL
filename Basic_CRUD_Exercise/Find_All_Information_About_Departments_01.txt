@@ -1,0 +1,2 @@
+SELECT * FROM `departments`
+order by `department_id`;
