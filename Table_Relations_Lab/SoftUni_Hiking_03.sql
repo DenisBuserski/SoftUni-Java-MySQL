@@ -8,5 +8,3 @@ FROM
     `campers` AS `c`
 WHERE
     `c`.`id` = `r`.`leader_id`;
-
-
