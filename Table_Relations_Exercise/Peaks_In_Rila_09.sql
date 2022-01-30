@@ -6,7 +6,7 @@ FROM
     `mountains`,
     `peaks`
 WHERE
-    `mountains`.id = `peaks`.mountain_id
+    `mountains`.`id` = `peaks`.`mountain_id`
         AND `mountain_range` = 'Rila'
 ORDER BY `peak_elevation` DESC;
 
