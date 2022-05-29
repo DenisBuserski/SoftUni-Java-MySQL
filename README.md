@@ -1,6 +1,6 @@
 # Softuni Java DB MySQL
 
-![programming-fundamentals-softuni](mysql-softuni.png)
+![mysql-softuni](mysql-softuni.png)
 
 ## Intro
 Programming Fundamentals introduced me to the vast world of the IT industry. In this module I learned about HTTP, HTML, CSS, Git and GitHub, as well as what QA is. In the end of the course, we had the opportunity with the help of the lecturer to develop our first web project. During the course we learned more deeply about Data Structures such as Arrays, Lists and Associative Arrays. I learned to use methods, regular expressions and also for the first time I got acquainted with Object Oriented Programming.
@@ -33,19 +33,13 @@ To learn more about the course you can check [Softuni](https://softuni.bg/)
 
 
 ## Exams
-- [01.Programming Fundamentals Final Exam Retake](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/01_Programming_Fundamentals_Final_Exam_Retake)
-- [01.Programming Fundamentals Mid Exam Retake](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/01_Programming_Fundamentals_Mid_Exam_Retake)
-- [02.Programming Fundamentals Final Exam](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/02_Programming_Fundamentals_Final_Exam)
-- [02.Programming Fundamentals Mid Exam](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/02_Programming_Fundamentals_Mid_Exam)
-- [03.Programming Fundamentals Final Exam Retake](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/03_Programming_Fundamentals_Final_Exam_Retake)
-- [03.Programming Fundamentals Mid Exam Retake](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/03_Programming_Fundamentals_Mid_Exam_Retake)
-- [04.Programming Fundamentals Final Exam](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/04_Programming_Fundamentals_Final_Exam)
-- [04.Programming Fundamentals Mid Exam](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/04_Programming_Fundamentals_Mid_Exam)
-- [05.Programming Fundamentals Final Exam](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/05_Programming_Fundamentals_Final_Exam)
-- [05.Programming Fundamentals Mid Exam](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/05_Programming_Fundamentals_Mid_Exam)
-- [Programming Fundamentals Final Exam 3 April 2021](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Programming_Fundamentals_Final_Exam_3%20April_2021)
-- [Programming Fundamentals Mid Exam 27 February 2021](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Programming_Fundamentals_Mid_Exam_27_February_2021)
-- [Programming Fundamentals Mid Exam Retake 6 August 2019](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Programming_Fundamentals_Mid_Exam_Retake_6_August_2019)
+- [Database Basics MySQL Exam 13 February 2022](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Exam_13_February_2022)
+- [Database Basics MySQL Exam 20 June 2021](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Exam_20_June_2021)
+- [Database Basics MySQL Exam 21 Oct 2018](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Exam_21_Oct_2018)
+- [Database Basics MySQL Exam 9 Feb 2020](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Exam_9%20Feb_2020)
+- [Database Basics MySQL Exam 9 Jun 2019](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Exam_9_Jun_2019)
+- [Database Basics MySQL Retake Exam 06 August 2021](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Retake_Exam_06_August_2021)
+- [Database Basics MySQL Retake Exam 31 March 2020](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Retake_Exam_31_March_2020)
 
 
 ## Certificates
