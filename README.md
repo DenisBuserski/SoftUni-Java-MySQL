@@ -3,7 +3,7 @@
 ![mysql-softuni](mysql-softuni.png)
 
 ## Intro
-Programming Fundamentals introduced me to the vast world of the IT industry. In this module I learned about HTTP, HTML, CSS, Git and GitHub, as well as what QA is. In the end of the course, we had the opportunity with the help of the lecturer to develop our first web project. During the course we learned more deeply about Data Structures such as Arrays, Lists and Associative Arrays. I learned to use methods, regular expressions and also for the first time I got acquainted with Object Oriented Programming.
+SoftUni's MySQL course was my first introduction to databases. I learned how to make basic and more complex SELECT statements, how to make table relations, JOINs, procedures, transactions and many other interesting new things.
 
 To learn more about the course you can check [Softuni](https://softuni.bg/)
 
