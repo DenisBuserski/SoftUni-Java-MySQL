@@ -66,4 +66,4 @@ To learn more about the course you can check [Softuni](https://softuni.bg/)
 
 
 ## Certificates
-[MySQL Certificate]([https://softuni.bg/certificates/details/103432/147a8d10](https://softuni.bg/certificates/details/123474/63ee1aa3))
+[MySQL Certificate](https://softuni.bg/certificates/details/123474/63ee1aa3)
