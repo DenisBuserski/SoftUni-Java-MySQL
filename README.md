@@ -9,44 +9,27 @@ To learn more about the course you can check [Softuni](https://softuni.bg/)
 
 
 ## Course topics
-### Basic Syntax, Conditional Statements and Loops
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Basic_Syntax_Conditional_Statements_And_Loops_Lab)
-- [Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Basic_Syntax_Conditional_Statements_And_Loops_Exercise)
-- [More Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Basic_Syntax_Conditional_Statements_And_Loops_More_Exercise)
-### Data Types and Variables
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Data_Types_And_Variables_Lab)
-- [Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Data_Types_And_Variables_Exercise)
-- [More Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Data_Types_And_Variables_More_Exercise)
-### Arrays
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Arrays_Lab)
-- [Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Arrays_Exercise)
-- [More Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Arrays_More_Exercise)
-### Methods
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Methods_Lab)
-- [Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Methods_Exercise)
-- [More Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Methods_More_Exercise)
-### Lists
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Lists_Lab)
-- [Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Lists_Exercise)
-- [More Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Lists_More_Exercise)
-### Bitwise Operations
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Bitwise_Operations)
-### Objects and Classes
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Objects_And_Classes_Lab)
-- [Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Objects_And_Classes_Exercise)
-- [More Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Objects_And_Classes_More_Exercise)
-### Associative Arrays
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Maps_Lambda_And_Stream_API_Lab)
-- [Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Maps_Lambda_And_Stream_API_Exercise)
-- [More Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Maps_Lambda_And_Stream_API_More_Exercise)
-### Text Processing
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Text_Processing_Lab)
-- [Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Text_Processing_Exercise)
-- [More Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Text_Processing_More_Exercise)
-### Regular Expressions
-- [Lab](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Regular_Expressions_Lab)
-- [Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Regular_Expressions_Exercises)
-- [More Exercise](https://github.com/DenisBuserski/Softuni_Programming_Fundamentals_Java/tree/main/Regular_Expressions_More_Exercise)
+### Data Definition and Datatypes
+- [Lab](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Data_Definition_And%20Data_Types_Lab)
+- [Exercise](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Data_Definition_And_Data_Types_Exercise)
+### Basic CRUD
+- [Lab](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Basic_CRUD_Lab)
+- [Exercise](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Basic_CRUD_Exercise)
+### Built-in Functions
+- [Lab](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Built-in_Functions_%20Lab)
+- [Exercise](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Built-in_Functions_Exercise)
+### Data Aggregation
+- [Lab](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Data_Aggregation_Lab)
+- [Exercise](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Built-in_Functions_Exercise)
+### Table Relations
+- [Lab](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Table_Relations_Lab)
+- [Exercise](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Table_Relations_Exercise)
+### Subqueries and JOINs
+- [Lab](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Subqueries_And_JOINs_Lab)
+- [Exercise](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Subqueries_And_JOINs_Exercise)
+### Database Programmability and Transactions
+- [Lab](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Programmability_Lab)
+- [Exercise](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Programmability_Exercise)
 
 
 ## Exams
