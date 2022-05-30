@@ -1,4 +1,4 @@
-# Softuni Java DB MySQL
+# Softuni Java MySQL
 
 ![mysql-softuni](mysql-softuni.png)
 
