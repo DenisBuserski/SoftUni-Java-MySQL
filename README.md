@@ -38,7 +38,7 @@ To learn more about the course you can check [Softuni](https://softuni.bg/)
 - [Database Basics MySQL Exam 21 Oct 2018](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Exam_21_Oct_2018)
 - [Database Basics MySQL Exam 9 Feb 2020](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Exam_9%20Feb_2020)
 - [Database Basics MySQL Exam 9 Jun 2019](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Exam_9_Jun_2019)
-- [Database Basics MySQL Retake Exam 06 August 2021](github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Retake_Exam_06_August_2021)
+- [Database Basics MySQL Retake Exam 06 August 2021](https://github.com/DenisBuserski/SoftUni-Java-MySQL/tree/main/Database_Basics_MySQL_Retake_Exam_06_August_2021)
 - [Database Basics MySQL Retake Exam 31 March 2020](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Database_Basics_MySQL_Retake_Exam_31_March_2020)
 
 
