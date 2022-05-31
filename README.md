@@ -1,6 +1,6 @@
 # Softuni MySQL
 
-![mysql-softuni]()
+![mysql-softuni](mysql-softuni.png)
 
 ## Intro
 SoftUni's MySQL course was my first introduction to databases. I learned how to make basic and more complex SELECT statements, how to make table relations, JOINs, procedures, transactions and many other interesting new things.
