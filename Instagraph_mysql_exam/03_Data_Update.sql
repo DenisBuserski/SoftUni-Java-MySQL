@@ -7,6 +7,3 @@ SET `profile_picture_id` =
 FROM `users_followers` AS `uf` 
 WHERE `uf`.`user_id` = `u`.`id`)
 WHERE `u`.`profile_picture_id` IS NULL;
-
-
-
