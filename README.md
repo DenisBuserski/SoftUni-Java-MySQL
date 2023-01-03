@@ -11,7 +11,7 @@ To learn more about the course you can check [Softuni](https://softuni.bg/)
 ## Course topics
 ### Data Definition and Datatypes
 - [Lab](https://github.com/DenisBuserski/SoftUni-MySQL/tree/main/Data_Definition_And_Data_Types/Lab)
-- [Exercise](https://github.com/DenisBuserski/SoftUni-Java-MySQL/tree/main/Data_Definition_And_Data_Types_Exercise)
+- [Exercise](https://github.com/DenisBuserski/SoftUni-MySQL/tree/main/Data_Definition_And_Data_Types/Exercise)
 ### Basic CRUD
 - [Lab](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Basic_CRUD_Lab)
 - [Exercise](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Basic_CRUD_Exercise)
