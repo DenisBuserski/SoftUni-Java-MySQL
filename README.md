@@ -13,7 +13,7 @@ To learn more about the course you can check [Softuni](https://softuni.bg/)
 - [Lab](https://github.com/DenisBuserski/SoftUni-MySQL/tree/main/Data_Definition_And_Data_Types/Lab)
 - [Exercise](https://github.com/DenisBuserski/SoftUni-MySQL/tree/main/Data_Definition_And_Data_Types/Exercise)
 ### Basic CRUD
-- [Lab](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Basic_CRUD_Lab)
+- [Lab](https://github.com/DenisBuserski/SoftUni-MySQL/tree/main/Basic_CRUD/Lab)
 - [Exercise](https://github.com/DenisBuserski/Softuni_Java_DB_MySQL/tree/main/Basic_CRUD_Exercise)
 ### Built-in Functions
 - [Lab](https://github.com/DenisBuserski/SoftUni-Java-MySQL/tree/main/Built-in_Functions_%20Lab)
