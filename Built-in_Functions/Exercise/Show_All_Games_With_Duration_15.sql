@@ -1,5 +1,5 @@
 SELECT 
-    `name` AS game,
+`name` AS game,
     CASE
         WHEN HOUR(`g`.start) BETWEEN 0 AND 11 THEN 'Morning'
         WHEN HOUR(`g`.start) BETWEEN 12 AND 17 THEN 'Afternoon'
@@ -11,5 +11,4 @@ SELECT
         WHEN `g`.`duration` BETWEEN 7 AND 10 THEN 'Long'
         ELSE 'Extra Long'
     END AS 'Duration'
-FROM
-    games AS `g`;
+FROM games AS `g`;
