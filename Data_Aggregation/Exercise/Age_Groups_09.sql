@@ -8,8 +8,7 @@ SELECT
         WHEN `age` <= 60 THEN '[51-60]'
         ELSE '[61+]'
     END AS `age_group`,
-    COUNT(*) AS `wizard_count`
-FROM
-    `wizzard_deposits`
+COUNT(*) AS `wizard_count`
+FROM `wizzard_deposits`
 GROUP BY `age_group`
 ORDER BY `wizard_count`;
