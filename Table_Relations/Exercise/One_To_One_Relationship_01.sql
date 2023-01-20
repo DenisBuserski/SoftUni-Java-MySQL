@@ -1,13 +1,13 @@
 CREATE TABLE `people` (
-    `person_id` INT AUTO_INCREMENT UNIQUE NOT NULL,
-    `first_name` VARCHAR(50) NOT NULL,
-    `salary` DECIMAL(10 , 2 ) NOT NULL DEFAULT 0,
-    `passport_id` INT NOT NULL UNIQUE
+`person_id` INT AUTO_INCREMENT UNIQUE NOT NULL,
+`first_name` VARCHAR(50) NOT NULL,
+`salary` DECIMAL(10 , 2 ) NOT NULL DEFAULT 0,
+`passport_id` INT NOT NULL UNIQUE
 );
 
 CREATE TABLE `passports` (
-    `passport_id` INT AUTO_INCREMENT UNIQUE NOT NULL,
-    `passport_number` VARCHAR(50) UNIQUE NOT NULL
+`passport_id` INT AUTO_INCREMENT UNIQUE NOT NULL,
+`passport_number` VARCHAR(50) UNIQUE NOT NULL
 )  AUTO_INCREMENT=101;
 
 INSERT INTO `people` (`first_name`, `salary`, `passport_id`)
