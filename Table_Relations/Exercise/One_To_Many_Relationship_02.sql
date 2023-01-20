@@ -1,13 +1,13 @@
 CREATE TABLE `manufacturers` (
-    `manufacturer_id` INT AUTO_INCREMENT UNIQUE NOT NULL,
-    `name` VARCHAR(50) NOT NULL,
-    `established_on` DATE NOT NULL
+`manufacturer_id` INT AUTO_INCREMENT UNIQUE NOT NULL,
+`name` VARCHAR(50) NOT NULL,
+`established_on` DATE NOT NULL
 );
 
 CREATE TABLE `models` (
-    `model_id` INT AUTO_INCREMENT UNIQUE NOT NULL,
-    `name` VARCHAR(50) NOT NULL,
-    `manufacturer_id` INT NOT NULL
+`model_id` INT AUTO_INCREMENT UNIQUE NOT NULL,
+`name` VARCHAR(50) NOT NULL,
+`manufacturer_id` INT NOT NULL
 )  AUTO_INCREMENT=101;
 
 
