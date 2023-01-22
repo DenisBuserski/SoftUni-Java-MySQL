@@ -1,0 +1,1 @@
+CREATE DATABASE instagraph_db;
