@@ -1,12 +1,9 @@
 SELECT 
-    `c`.`country_name`, `r`.`river_name`
+`c`.`country_name`, `r`.`river_name`
 FROM
-    `countries` AS `c`
-        LEFT JOIN
-    `countries_rivers` AS `cr` ON `cr`.`country_code` = `c`.`country_code`
-        LEFT JOIN
-    `rivers` AS `r` ON `cr`.`river_id` = `r`.`id`
-WHERE
-    `c`.`continent_code` = 'AF'
+`countries` AS `c`
+LEFT JOIN `countries_rivers` AS `cr` ON `cr`.`country_code` = `c`.`country_code`
+LEFT JOIN `rivers` AS `r` ON `cr`.`river_id` = `r`.`id`
+WHERE `c`.`continent_code` = 'AF'
 ORDER BY `country_name` ASC
 LIMIT 5;
