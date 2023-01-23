@@ -8,4 +8,3 @@ GROUP BY `ah`.`id`
 ORDER BY `full_name` ASC,
 `ah`.`id` ASC;
 END
-
