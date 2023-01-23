@@ -5,4 +5,3 @@ BEGIN
     RETURN 
     (SELECT initial_sum * (SELECT POW(1 + yearly_interest_rate, number_of_years)));
 END
-
