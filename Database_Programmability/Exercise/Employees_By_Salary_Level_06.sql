@@ -13,5 +13,3 @@ ORDER BY
 `first_name` DESC,
 `last_name` DESC;
 END
-
-
