@@ -1,8 +1,8 @@
 CREATE TABLE `logs` (
-    `log_id` INT PRIMARY KEY AUTO_INCREMENT,
-    `account_id` INT NOT NULL,
-    `old_sum` DECIMAL(19 , 4 ) NOT NULL,
-    `new_sum` DECIMAL(19 , 4 ) NOT NULL
+`log_id` INT PRIMARY KEY AUTO_INCREMENT,
+`account_id` INT NOT NULL,
+`old_sum` DECIMAL(19 , 4 ) NOT NULL,
+`new_sum` DECIMAL(19 , 4 ) NOT NULL
 );
 
 
@@ -16,10 +16,10 @@ END;
 
 
 CREATE TABLE `notification_emails` (
-    `id` INT PRIMARY KEY AUTO_INCREMENT,
-    `recipient` INT NOT NULL,
-    `subject` VARCHAR(60) NOT NULL,
-    `body` VARCHAR(255) NOT NULL
+`id` INT PRIMARY KEY AUTO_INCREMENT,
+`recipient` INT NOT NULL,
+`subject` VARCHAR(60) NOT NULL,
+`body` VARCHAR(255) NOT NULL
 );
 
 
