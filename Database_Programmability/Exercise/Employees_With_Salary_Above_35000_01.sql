@@ -8,4 +8,3 @@ ORDER BY
 `e`.`last_name` ASC,
 `e`.`employee_id` ASC;
 END
-
