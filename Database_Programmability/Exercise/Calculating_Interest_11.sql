@@ -7,7 +7,6 @@ BEGIN
 END;
 
 
-
 CREATE PROCEDURE usp_calculate_future_value_for_account (account_id INT, interest_rate DECIMAL(19,4))
 BEGIN
 SELECT
