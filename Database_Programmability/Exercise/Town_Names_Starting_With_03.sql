@@ -5,3 +5,4 @@ FROM `towns` AS `t`
 WHERE `t`.`name` LIKE CONCAT(str, '%')
 ORDER BY `town_name` ASC;
 END
+
