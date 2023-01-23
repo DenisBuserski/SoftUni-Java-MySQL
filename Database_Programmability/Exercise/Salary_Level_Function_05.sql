@@ -9,3 +9,4 @@ RETURN (SELECT
         ELSE 'High' 
         END AS `salary_Level`);
 END
+
