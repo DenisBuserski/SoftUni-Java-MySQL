@@ -4,6 +4,3 @@ WHERE
 (`quantity_in_stock` >= 60
 AND `quantity_in_stock` <= 70
 AND `id` <> 0);
-
-
-
