@@ -42,6 +42,7 @@ CREATE TABLE `courses` (
 `car_id` INT NOT NULL,
 `client_id` INT NOT NULL,
 `bill` DECIMAL(10,2) DEFAULT 10,
+
 CONSTRAINT fk_courses_addresses
 FOREIGN KEY (`from_address_id`) 
 REFERENCES `addresses` (`id`),
@@ -59,8 +60,10 @@ CREATE TABLE `cars_drivers` (
 `car_id` INT NOT NULL,
 `driver_id` INT NOT NULL,
 PRIMARY KEY (`car_id`, `driver_id`),
+
 CONSTRAINT fk_cars_drivers_cars FOREIGN KEY (`car_id`)
 REFERENCES `cars`(`id`),
+
 CONSTRAINT fk_cars_drivers_drivers FOREIGN KEY (`driver_id`)
 REFERENCES `drivers` (`id`)
 );
