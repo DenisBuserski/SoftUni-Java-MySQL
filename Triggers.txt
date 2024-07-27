@@ -1,0 +1,99 @@
+==============================================================================================================================================================
+| BEFORE UPDATE                                                                                                                                              |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Имам 2 таблици, създавам trigger, когато направя UPDATE операция, първо ще запише данните в новата таблица, след това ще изпълни UPDATE операцията         |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CREATE TABLE `customer`(                              | DELIMITER $$                              | UPDATE `customer`                                      |
+| `account_id` INT PRIMARY KEY,                         | CREATE TRIGGER update_cus                 | SET `balance` = `balance` + 3000                       |
+| `customer_name` VARCHAR(20),                          | BEFORE UPDATE ON `customer`               | WHERE `account_id` = 1001;                             |
+| `balance` DECIMAL);                                   | FOR EACH ROW                              |                                                        |
+|                                                       | BEGIN                                     | UPDATE `customer`                                      |
+| INSERT INTO `customer` values (1000, "Fanny", 7000);  |  INSERT INTO `mini_statement`             | SET `balance` = `balance` + 3000                       |
+| INSERT INTO `customer` values (1001, "Peter", 12000); |  VALUE (OLD.`account_id`, OLD.`balance`); | WHERE `account_id` = 1000;                             |
+|                                                       | END;                                      |                                                        |
+| CREATE TABLE `mini_statement`(                        | $$                                        |                                                        |
+| `account_id` INT,                                     | DELIMITER ;                               |                                                        |
+| `balance` DECIMAL,                                    |                                           |                                                        |
+| FOREIGN KEY(`account_id`)                             |                                           |                                                        |
+| REFERENCES `customer`(`account_id`)                   |                                           |                                                        |
+| ON DELETE CASCADE);                                   |                                           |                                                        |
+==============================================================================================================================================================
+| AFTER UPDATE                                                                                                                                               |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Имам 2 таблици, създавам trigger, когато направя UPDATE операция, първо ще запише направи UPDATE и ще запише данните в първата таблицата, след това ще     |
+| изпълни запише данните във втората таблица                                                                                                                 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CREATE TABLE `customer`(                              | DELIMITER $$                              | UPDATE `customer`                                      |
+| `account_id` INT PRIMARY KEY,                         | CREATE TRIGGER update_cus                 | SET `balance` = `balance` + 3000                       |
+| `customer_name` VARCHAR(20),                          | AFTER UPDATE ON `customer`                | WHERE `account_id` = 1001;                             |
+| `balance` DECIMAL);                                   | FOR EACH ROW                              |                                                        |
+|                                                       | BEGIN                                     | UPDATE `customer`                                      |
+| INSERT INTO `customer` values (1000, "Fanny", 7000);  |  INSERT INTO `mini_statement`             | SET `balance` = `balance` + 3000                       |
+| INSERT INTO `customer` values (1001, "Peter", 12000); |  VALUE (NEW.`account_id`, NEW.`balance`); | WHERE `account_id` = 1000;                             |
+|                                                       | END;                                      |                                                        |
+| CREATE TABLE `mini_statement`(                        | $$                                        |                                                        |
+| `account_id` INT,                                     | DELIMITER ;                               |                                                        |
+| `balance` DECIMAL,                                    |                                           |                                                        |
+| FOREIGN KEY(`account_id`)                             |                                           |                                                        |
+| REFERENCES `customer`(`account_id`)                   |                                           |                                                        |
+| ON DELETE CASCADE);                                   |                                           |                                                        |
+==============================================================================================================================================================
+| BEFORE INSERT                                                                                                                                              |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CREATE TABLE `contacts`(                              | DELIMITER $$                          | INSERT INTO `contacts`                                     |
+| `contact_id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, | CREATE TRIGGER contacts_before_insert | VALUES (1, 'Denis', 'Kane');                               |
+| `last_name` VARCHAR(30) NOT NULL,                     | BEFORE INSERT ON `contacts`           |                                                            |
+| `boss` VARCHAR(30));                                  | FOR EACH ROW                          |                                                            |
+|                                                       | BEGIN                                 |                                                            |
+|                                                       |  DECLARE vUser VARCHAR(50);           |                                                            |
+|                                                       |  SELECT USER() INTO vUser;            |                                                            |
+|                                                       |  SET NEW.`boss` = vUser;              |                                                            |
+|                                                       | END;                                  |                                                            |
+|                                                       | $$                                    |                                                            |
+|                                                       | DELIMITER ;                           |                                                            |
+==============================================================================================================================================================
+| AFTER INSERT                                                                                                                                               |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CREATE TABLE `contacts`(                              | DELIMITER $$                                              | INSERT INTO `contacts`                 |
+| `contact_id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, | CREATE TRIGGER contacts_after_insert                      | VALUES (1, 'Kumar', 'Rupesh');         |   
+| `last_name` VARCHAR(30) NOT NULL,                     | AFTER INSERT ON `contacts`                                |                                        |
+| `first_name` VARCHAR(25));                            | FOR EACH ROW                                              |                                        |
+|                                                       | BEGIN                                                     |                                        |
+| CREATE TABLE `contacts_audit`(                        |  DECLARE vUser VARCHAR(50);                               |                                        |
+| `contact_id` INT,                                     |  SELECT USER() INTO vUser;                                |                                        |
+| `created_by` VARCHAR(30));                            |  INSERT INTO `contacts_audit`(`contact_id`, `created_by`) |                                        |
+|                                                       |  VALUES(NEW.`contact_id`, vUser);                         |                                        |
+|                                                       | END;                                                      |                                        |
+|                                                       | $$                                                        |                                        |
+|                                                       | DELIMITER ;                                               |                                        |
+==============================================================================================================================================================
+| BEFORE DELETE                                                                                                                                              |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CREATE TABLE `contacts`(                              | DELIMITER $$                                              | INSERT INTO `contacts`                 |
+| `contact_id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, | create trigger contacts_before_delete                     | VALUES (1, 'Denis', 'Ivanov', 'Kane'); |
+| `last_name` VARCHAR (30) NOT NULL,                    | BEFORE DELETE ON `contacts`                               |                                        |
+| `first_name` VARCHAR (25),                            | FOR EACH ROW                                              | DELETE FROM `contacts`                 |
+| `created_by` VARCHAR(30));                            | BEGIN                                                     | WHERE `contact_id` = 1;                |
+|                                                       |  DECLARE vUser VARCHAR(50);                               |                                        |
+| CREATE TABLE `contacts_audit` (                       |  SELECT USER() INTO vUser;                                |                                        |
+| `contact_id` INT,                                     |  INSERT INTO `contacts_audit`(`contact_id`, `deleted_by`) |                                        |
+| `deleted_by` VARCHAR(20));                            |  VALUES(OLD.`contact_id`, vUser );                        |                                        |
+|                                                       | END;                                                      |                                        |
+|                                                       | $$                                                        |                                        |
+|                                                       | DELIMITER ;                                               |                                        |
+==============================================================================================================================================================
+| AFTER DELETE                                                                                                                                               |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CREATE TABLE `contacts`(                              | DELIMITER $$                                              | INSERT INTO `contacts`                 |
+| `contact_id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT, | create trigger contacts_before_delete                     | VALUES (1, 'Denis', 'Ivanov', 'Kane'); |
+| `last_name` VARCHAR (30) NOT NULL,                    | AFTER DELETE ON `contacts`                                |                                        |
+| `first_name` VARCHAR (25),                            | FOR EACH ROW                                              | DELETE FROM `contacts`                 |
+| `created_by` VARCHAR(30));                            | BEGIN                                                     | WHERE `contact_id` = 1;                |
+|                                                       |  DECLARE vUser VARCHAR(50);                               |                                        |
+| CREATE TABLE `contacts_audit` (                       |  SELECT USER() INTO vUser;                                |                                        |
+| `contact_id` INT,                                     |  INSERT INTO `contacts_audit`(`contact_id`, `deleted_by`) |                                        |
+| `deleted_by` VARCHAR(20));                            |  VALUES(OLD.`contact_id`, vUser );                        |                                        |
+|                                                       | END;                                                      |                                        |
+|                                                       | $$                                                        |                                        |
+|                                                       | DELIMITER ;                                               |                                        |
+==============================================================================================================================================================
